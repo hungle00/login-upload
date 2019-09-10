@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login and upload file</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- OWN CSS -->
+    <link href="/css/home.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    
+
+</head>
+
+<body>
+
+<% include partials/navbar %>
+
+<div class="container-fluid header">
+    <div class="content text-center">
+        
+        <h1>Upload File</h1>
+        <h3>Welcome to my app</h3>
+        <hr>
+
+        <% if(!loggedUser) { %>
+            <a href="/auth/register" class="btn btn-lg btn-default">
+                <i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up
+            </a>
+        <% } %>
+        <a href="/upload" class="btn btn-lg btn-default">
+            <i class="fa fa-pie-chart" aria-hidden="true"></i> Upload FIle
+        </a>
+            
+    </div>
+</div>
+
+<% include partials/footer %>

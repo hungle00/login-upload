@@ -1,0 +1,50 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.extra-option {
+    margin-top: 0.3em;
+}
+
+#more-options {
+    margin-top: 0.3em;
+}
+
+.extra-option-close {
+    z-index: 10;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.extra-option-close:hover {
+    color: red;
+}
+
+table form {
+    display: inline;
+}
+
+#chart {
+    width: 100%; 
+    min-height: 450px;
+}
+
+footer {
+    margin-top: 3em;
+}
+
+footer i {
+    color: #333;
+}
+
+footer i:hover {
+    color: #333C;
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+}
